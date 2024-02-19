@@ -3,6 +3,8 @@
 *, a { font-family: "Montserrat", Arial, sans-serif; text-decoration: none; color: #cdbca4; }
 html { display: flex; height: 100%; width: 100%; font-family: "Montserrat", Arial, sans-serif; overflow: hidden;}
 
+body{ background-color: black; }
+
 #main{
     position: absolute;
     top: 50%;
@@ -190,10 +192,13 @@ html { display: flex; height: 100%; width: 100%; font-family: "Montserrat", Aria
 }
 
 #background-video{
-    position: fixed;
+    position: absolute;
+    width: 100%;
+    height: auto;
     min-width: 100%;
     min-height: 100%;
     right: 0;
     bottom: 0;
     z-index: -1;
+    object-fit: cover;
 }

@@ -1,3 +1,8 @@
+@keyframes opacity{
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
 @keyframes name-anim{
     0% { opacity: 0; width: 0; height: 0; }
     50% { width: 600px; height: 600px; }
@@ -30,6 +35,12 @@
     0% { opacity: 0; scale: 0; }
     50% { scale: 1.25; }
     100% { opacity: 1; }
+}
+
+#screen-cover{
+    animation: opacity;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 #name{

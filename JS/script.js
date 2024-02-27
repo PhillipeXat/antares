@@ -21,3 +21,10 @@ function ShowQuote(){
         main.style.scale = "1";
     }
 }
+
+function HideScreenCover(){
+    const screenCover = document.getElementById("screen-cover");
+    screenCover.style.visibility = "hidden";
+}
+
+setTimeout(HideScreenCover, 2000);
